@@ -1,0 +1,18 @@
+/*容器*/
+
+.container{
+    max-width: 1296px;
+    margin: 0 auto;
+}
+@include pad{
+    .container{
+        max-width: 768px;
+        padding: 0 12px;
+    }
+}
+@include mobile{
+    .container{
+        max-width: 375px;
+        padding: 0 12px; 
+    }
+}
