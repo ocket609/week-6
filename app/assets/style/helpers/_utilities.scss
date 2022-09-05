@@ -1,0 +1,78 @@
+
+/*
+fs- P461 字大小
+m&p- P258 間距
+color- P71&82
+*/
+
+/*font-family*/
+.fm-mono{
+    font-family: "Azeret Mono", monospace;
+}
+
+/*font-size*/
+.fs-50{
+    font-size: 50px;
+}
+
+
+/*line-height*/
+.lh-1_458{
+    line-height: 1.458;
+}
+.lh-1_445{
+    line-height: 1.445;
+}
+.lh-sm-1_445{
+    line-height: 1.445;
+}
+.lh-1_4285{
+    line-height: 1.4285;
+}
+.lh-1_166{
+    line-height: 1.166;
+}
+.lh-1_428{
+    line-height: 1.428;
+}
+
+
+
+
+/*color*/
+.color-gradient{
+    background: linear-gradient(#09ACF5, #62DB54); /* 漸層-預設是由上到下漸層 */
+    background-clip: text; /* 將背景裁切成只有文字部分 */
+    -webkit-background-clip: text; /* 因為 Chrome 還沒有很好的支援度，所以要加上 webkit 前綴 */
+    color: transparent; /* 文字顏色設定為透明 color: transparent; 呈現出背景 */
+}
+.bg-color-gradient{
+    background: linear-gradient(104deg, #09ACF5, #62DB54);
+}
+
+
+
+/*margin&padding*/
+.pr-6{
+    padding-right: 6px;
+}
+.pr-48{
+    padding-right: 48px;
+}
+.pr-50{
+    padding-right: 50px;
+}
+.pb-16{
+    padding-bottom: 16px;
+}
+.pb-24{
+    padding-bottom: 24px;
+}
+
+
+.pb-74{
+    padding-bottom: 74px;
+}
+.pb-md-0{
+    padding-bottom: 0px;
+}

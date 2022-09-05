@@ -4,34 +4,108 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
-
-<div class="container">
-  <h1 class="index__h1 text-white">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
+<!--slogan--><!--lh的問題還沒解決-->
+<div class="slogan bg-color-1">
+  <div class="container justify-content-center">
+    <div class="img-slogan d-flex align-items-center justify-content-center">
+      <div class="row">
+        <div class="col-mb-6">
+          <div class="banner-slogan text-center align-middle position-relative">
+            <h1 class="fs-4 fs-sm-11 lh-1_458 color-gradient mb-0">全台最豐富的程式家教</h1>
+            <p class="fs-4 fs-sm-11 lh-1_458 text-white pb-24 mb-0">在實踐中化理想為現實</p>
+            <p class="text-white fs-8 fs-sm-7 lh-sm-24 mb-0">全台最專業師資｜到府程式家教｜客製化課程</p>
+            <div class="square position-absolute top-0 start-0 translate-middle"></div>
+            <div class="square position-absolute top-0 start-100 translate-middle"></div>
+            <div class="square position-absolute top-100 start-0 translate-middle"></div>
+            <div class="square position-absolute top-100 start-100 translate-middle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+<!--publicity 宣傳語-->
+<div class="publicity bg-color-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-3 text-white d-flex align-items-center justify-content-center justify-content-md-start pb-md-24">
+        <div class="item-publicity">
+          <p class="fs-3 lh-sm-1_458 lh-1_4285">手把手帶你 親自到家教到會</p>
+          <div class="line-publicity mx-auto m-md-0"></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 text-center text-white pb-24 pb-md-0">
+        <div class="box-publicity">
+          <span class="material-symbols-outlined fs-50 pb-24">code</span>
+          <p class="pb-16">超過 100 種專業課程</p>
+          <p class="">學習標準化的電腦形式語言 <br>培養運算思維和邏輯素養</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 text-center text-white pb-md-24">
+        <div class="box-publicity">
+          <span class="material-symbols-outlined fs-50 pb-24">rocket_launch</span>
+          <p class="pb-16">高效學習</p>
+          <p class="">客製化專屬課表 <br>讓學習變簡單</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 text-center text-white pb-md-24">
+        <div class="box-publicity">
+          <span class="material-symbols-outlined fs-50 pb-24">location_on</span>
+          <p class="pb-16">指定地點</p>
+          <p class="">專業老師到你指定的地點 <br>一對一高效學習</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--process 流程-->
+<div class="process">
+  <div class="container">
+    <div class="top-process d-flex flex-column align-items-center pb-50 pb-md-74"><!--pb-md-74出問題了！-->
+      <h3 class="text-white lh-1_428 pb-16 mb-0">預期上課流程</h3>
+      <div class="line-process"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-lg-3 pb-50 pb-md-0">
+        <div class="box-process position-relative">
+          <p class="title-box-process text-white fs-11 fw-Bold lh-1_166 mb-0">01</p> <!--記得改顏色跟字型樣式呈現-->
+          <div class="content-box-process mx-auto">
+            <p class="text-white">預約</p>
+            <p class="text-white mb-0">線上預約指定課程與老師 <br>由老師安排專屬課程</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 pb-50 pb-md-0">
+        <div class="box-process position-relative">
+          <p class="title-box-process text-white fs-11 fw-Bold lh-1_166 mb-0">02</p> <!--記得改顏色跟字型樣式呈現-->
+          <div class="content-box-process mx-auto">
+            <p class="text-white fw-Bold">付款</p>
+            <p class="text-white mb-0">支援各種支付方式 <br>提供12期分期付款</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 pb-50 pb-md-0">
+        <div class="box-process position-relative">
+          <p class="title-box-process text-white fs-11 fw-Bold lh-1_166 mb-0">03</p> <!--記得改顏色跟字型樣式呈現-->
+          <div class="content-box-process mx-auto">
+            <p class="text-white fw-Bold">上課</p>
+            <p class="text-white mb-0">地點由您指定 <br>密集性一對一教學</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="box-process position-relative">
+          <p class="title-box-process text-white fs-11 fw-Bold lh-1_166 mb-0">04</p> <!--記得改顏色跟字型樣式呈現-->
+          <div class="content-box-process mx-auto">
+            <p class="text-white fw-Bold">提供滿意度</p>
+            <p class="text-white mb-0">提供課程滿意度及回饋 <br>讓我們持續成長與進步</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">

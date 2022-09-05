@@ -11,6 +11,7 @@
   </head>
 
   <body>
+    <!--Nav-->
     <div class="header">
       <nav class="navbar bg-color-3 p-0">
         <div class="container">
@@ -22,18 +23,18 @@
           </a>
           <ul class="list-unstyled d-flex mb-0">
             <li class="nav-item">
-              <a class="nav-link text-white fs-7 pr-48" href="#">首頁</a>
+              <a class="nav-link text-white fs-7 pr-48  d-none d-sm-block" href="#">首頁</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white fs-7 pr-50" href="#">課程介紹</a>
+              <a class="nav-link text-white fs-7 pr-50  d-none d-sm-block" href="#">課程介紹</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white fs-7" href="#"><span class="material-symbols-outlined pr-6 align-middle">
+              <a class="nav-link text-white fs-7 d-none d-sm-block" href="#"><span class="material-symbols-outlined pr-6 align-middle">
                 account_circle
                 </span>登入</a>
             </li>
             <li class="nav-item d-block d-sm-none">
-              <a class="nav-link fs-7 text-white" href="">
+              <a class="nav-link fs-7 text-white" data-bs-toggle="collapse" href="#collapse-handle" role="button" aria-expanded="false" aria-controls="collapse-handle">
                 <span class="material-symbols-outlined align-middle">
                   drag_handle
                   </span>
@@ -43,12 +44,26 @@
         </div>
       </nav>
     </div>
+    <!--Collapse-->
+    <div class="collapse" id="collapse-handle">
+      <div class="card card-body bg-color-3 list-group-flush py-1">
+        <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center mb-0">
+          <li><a class="d-inline-block text-white fs-7 py-6" href="">首頁</a></li>
+          <li><a class="d-inline-block text-white fs-7 py-6" href="">課程介紹</a></li>
+          <li><a class="d-inline-block text-white fs-7 py-6" href=""><span class="material-symbols-outlined pr-6 align-middle">
+            account_circle
+            </span>登入</a></li>
+        </ul>
+      </div>
+    </div>
 
     <%- contents %>
 
-    <footer class="footer">
-      footer
+    <!--Footer-->
+    <footer class="footer bg-color-4 d-flex justify-content-center">
+      <p class="fs-9 fs-sm-6  lh-sm-14 text-color-fs3 mb-0">Coding Home © 2022 All Rights Reserved</p>
     </footer>
+
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
