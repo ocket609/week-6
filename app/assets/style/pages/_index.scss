@@ -1,9 +1,5 @@
 /*BS5 是由手機寫起，所以都是min*/
 /*slogan*/
-/*
-bg-color:#1C1C1C
-字型、大小、字寬 還沒調整
-*/
 .slogan{
     max-height: 680px;
     padding: 77px 0 66px;
@@ -25,6 +21,7 @@ bg-color:#1C1C1C
         background-color: #ffff;
     }
 }
+
 @include mobile{
     .img-slogan{
         height: 336px;
@@ -33,66 +30,50 @@ bg-color:#1C1C1C
     .banner-slogan{
         padding: 32px 28px;
     }
-    .lh-24{
-        line-height: 24px;
-    }   
 }
 
 /*publicity 宣傳語*/
 .publicity{
-    padding: 80px 0;
-    .line-publicity{
-        width: 50px;
-        height: 3px;
-        background-color: #62DB54;
-    }
-    .box-publicity{
-        border: 1px solid #2D2D2D;
-        padding: 48px 0;
-        border-radius: 12px;
-        &:hover{
-            background-color: #202020;
-            border-color: #62DB54;
-        span{
-            background: linear-gradient(#09ACF5, #62DB54);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-        }
+  padding: 80px 0;
+  .box-publicity{
+    border: 1px solid #2D2D2D;
+    padding: 48px 0;
+    border-radius: 12px;
+    &:hover{
+      background-color: #202020;
+      border-color: #62DB54;
+      span{
+        background: linear-gradient(#09ACF5, #62DB54);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
       }
     }
+  }
 }
 @include mobile{
-    .publicity{
-      padding: 40px 0;
-      .line-publicity{
-        margin: 0 auto;
-      }
-      .box-publicity{
-        background-color: #202020;
-        border-color: #202020;
-        span{
-          background: linear-gradient(#09ACF5, #62DB54);
-          background-clip: text;
-          -webkit-background-clip: text;
-          color: transparent;
-        }
+  .publicity{
+    padding: 40px 0;
+    .title-line-style{
+      margin: 0 auto;
+    }
+    .box-publicity{
+      background-color: #202020;
+      border-color: #202020;
+      span{
+        background: linear-gradient(#09ACF5, #62DB54);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
       }
     }
-    .pb-md-0{
-      padding-bottom: 0px;
-    }
+  }
 }
 
 /*process 流程*/
 .process{
     background-color: #1C1C1C;
     padding: 80px 0;
-    .line-process{
-      width: 50px;
-      height: 3px;
-      background-color: #62DB54;
-    }
     .box-process{
       width: 100%;
       border: 1px solid #FFFFFF;
@@ -107,17 +88,22 @@ bg-color:#1C1C1C
       left: 48px;
       z-index: 2;
     }
-    .pb-md-74{
-        padding-bottom: 74px;
-    }
 }
 @include mobile{
-    .process{
-      padding: 40px 0;
-    }
-    .pb-50{
-    padding-bottom: 50px;
-    }
+  .process{
+    padding: 40px 0;
+  }
 }
 
-
+/*program 程式*/
+/*swiper-slide 要給寬度定義，不然會直接撐滿版；所以助教這邊給*/
+.program{
+  padding: 80px 24px;
+  .swiper-slide{
+    width: auto; /**/
+  }
+  .slide-btn-style{
+    border: 1px solid #ffff;
+    padding: 24px 32px;
+  }
+}

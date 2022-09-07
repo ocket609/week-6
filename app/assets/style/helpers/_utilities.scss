@@ -17,25 +17,6 @@ color- P71&82
 
 
 /*line-height*/
-.lh-1_458{
-    line-height: 1.458;
-}
-.lh-1_445{
-    line-height: 1.445;
-}
-.lh-sm-1_445{
-    line-height: 1.445;
-}
-.lh-1_4285{
-    line-height: 1.4285;
-}
-.lh-1_166{
-    line-height: 1.166;
-}
-.lh-1_428{
-    line-height: 1.428;
-}
-
 
 
 
@@ -50,6 +31,12 @@ color- P71&82
     background: linear-gradient(104deg, #09ACF5, #62DB54);
 }
 
+/*line*/
+.title-line-style{
+    width: 50px;
+    height: 3px;
+    background-color: #62DB54;
+}
 
 
 /*margin&padding*/
@@ -61,18 +48,4 @@ color- P71&82
 }
 .pr-50{
     padding-right: 50px;
-}
-.pb-16{
-    padding-bottom: 16px;
-}
-.pb-24{
-    padding-bottom: 24px;
-}
-
-
-.pb-74{
-    padding-bottom: 74px;
-}
-.pb-md-0{
-    padding-bottom: 0px;
 }

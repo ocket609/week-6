@@ -265,6 +265,8 @@ $spacers: (
   4: $spacer * 1.5, //24
   5: $spacer * 3, //48
   6: $spacer * .75, //12
+  50: 50px,
+  74: 74px,
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -447,9 +449,20 @@ $font-weight-bolder:          bolder !default;
 
 $font-weight-base:            $font-weight-normal !default;
 
-$line-height-base:            1.5 !default;
-$line-height-sm:              1.25 !default;
-$line-height-lg:              2 !default;
+$line-height-base:            1.5 !default; //24
+$line-height-sm:              1.25 !default; //20
+$line-height-lg:              2 !default; //32
+$line-height-14:              14px !default; /*NEW↓*/
+$line-height-19:              19px !default;
+$line-height-21:              21px !default;
+$line-height-26:              26px !default;
+$line-height-29:              29px !default;
+$line-height-35:              35px !default;
+$line-height-37:              37px !default;
+$line-height-40:              40px !default;
+$line-height-56:              56px !default;
+$line-height-70:              70px !default;
+
 
 $h1-font-size:                $font-size-base * 2.5 !default;  //40
 $h2-font-size:                $font-size-base * 2 !default;  //32
