@@ -95,7 +95,8 @@ $theme-colors: (
   "color-4":    #1A1A1A,
   "color-fs1":  #494755,
   "color-fs2":  #C1C1C1,
-  "color-fs3":  #909090
+  "color-fs3":  #909090,
+  "black":      $black,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -265,6 +266,10 @@ $spacers: (
   4: $spacer * 1.5, //24
   5: $spacer * 3, //48
   6: $spacer * .75, //12
+  7: $spacer * 2, //32  /*NEW↓*/
+  8: $spacer * 2.5, //40
+  26: 26px,
+  37: 37px,
   50: 50px,
   74: 74px,
 ) !default;
