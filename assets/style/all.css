@@ -16106,16 +16106,26 @@ color- P71&82
 
 /*Strategy 策略*/
 .strategy .box-strategy {
+  position: relative;
   padding: 216px 0;
-  position: absolute;
   color: #ffff;
-  background-color: #000;
+}
+
+.strategy .box-strategy::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: color-1;
   opacity: 0.6;
   /*透明度  1-不透明、0.6-半透明、0-完全透明*/
 }
 
-.strategy .box-strategy:hover {
-  opacity: 1;
+.strategy .box-strategy:hover::before {
+  /*偽元素在hover時消失*/
+  display: none;
 }
 
 .strategy .box-strategy:hover .icon-strategy {
@@ -16127,14 +16137,13 @@ color- P71&82
   background-color: #62DB54;
 }
 
-.strategy .box-strategy .line-strategy {
+.strategy .line-strategy {
   width: 50px;
   height: 3px;
   background-color: #ffff;
 }
 
 .strategy .bg-img-1 {
-  position: relative;
   background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info01.jpg);
   background-position: center;
   background-size: cover;
@@ -16142,7 +16151,6 @@ color- P71&82
 }
 
 .strategy .bg-img-2 {
-  position: relative;
   background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info02.jpg);
   background-position: center;
   background-size: cover;
@@ -16150,7 +16158,6 @@ color- P71&82
 }
 
 .strategy .bg-img-3 {
-  position: relative;
   background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info03.jpg);
   background-position: center;
   background-size: cover;
@@ -16158,7 +16165,6 @@ color- P71&82
 }
 
 .strategy .bg-img-4 {
-  position: relative;
   background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/info04.jpg);
   background-position: center;
   background-size: cover;
@@ -16241,47 +16247,7 @@ color- P71&82
   padding: 80px 0;
 }
 
-.feedback .swiper {
-  position: relative;
-  width: 925px;
-  height: 429px;
-  /*img{
-      width: 100%;
-      height: 100%;
-    }*/
-}
-
-.feedback .swiper-img {
-  position: absolute;
-  top: 0;
-  left: 10px;
-  width: 525px;
-  height: 381px;
-  z-index: 1;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.feedback .swiper-img::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  border: 1px solid #FFFF;
-  border-radius: 24px;
-  position: absolute;
-  top: 10px;
-  left: -10px;
-  z-index: -1;
-}
-
-.feedback .swiper .img-radius-24 {
-  border-radius: 24px;
-}
-
-.feedback .swiper .card {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+.feedback .card {
   width: 416px;
   height: 178px;
   padding: 32px;
@@ -16289,7 +16255,7 @@ color- P71&82
   z-index: 2;
 }
 
-.feedback .swiper .card-img {
+.feedback .card-img {
   position: absolute;
   top: -52px;
   right: 32px;
@@ -16297,84 +16263,6 @@ color- P71&82
   height: 100px;
   border-radius: 50%;
   z-index: 3;
-}
-
-.feedback .swiper .swiper-button-next:after {
-  content: "";
-}
-
-.feedback .swiper .swiper-button-prev:after {
-  content: "";
-}
-
-.feedback .swiper .swiper-bnt {
-  position: unset;
-  pointer-events: none;
-  margin-top: 0;
-  width: 24px;
-  height: 24px;
-  color: #62DB54;
-  opacity: initial;
-}
-
-.feedback .swiper .swiper-pagination {
-  bottom: 5px;
-}
-
-.feedback .swiper .swiper-pagination .swiper-pagination-bullet {
-  background-color: #62DB54;
-  opacity: initial;
-}
-
-.feedback .swiper .swiper-pagination-bullet-active {
-  width: 16px;
-  border-radius: 100px;
-}
-
-.feedback .swiper .swiper-pagination .swiper-button-next .swiper-button-prev {
-  position: unset;
-  margin-top: 0;
-}
-
-.feedback .swiper .swiper-icon {
-  position: absolute;
-  bottom: 0;
-  left: 15%;
-  width: 30%;
-  height: auto;
-  z-index: 10;
-}
-
-@media (max-width: 375px) {
-  .swiper {
-    width: auto;
-    height: auto;
-  }
-  .swiper-img {
-    position: relative;
-    width: 100%;
-  }
-  .card {
-    position: relative;
-    width: 100%;
-    padding: 24px;
-    bottom: auto;
-    right: auto;
-    margin-top: 90px;
-  }
-  .card-img {
-    width: 80px;
-    height: 80px;
-  }
-  .swiper-icon {
-    position: relative;
-    -webkit-transform: translateY(50%);
-        -ms-transform: translateY(50%);
-            transform: translateY(50%);
-    margin: auto;
-    margin-top: 32px;
-    left: auto;
-  }
 }
 
 /*# sourceMappingURL=all.css.map */
