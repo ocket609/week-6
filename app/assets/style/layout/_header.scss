@@ -18,11 +18,68 @@
         padding: 24px 0;
     }
 }
+/*modal*/
+.modal-style{
+    max-width: 636px;
+}
+.modal-body-style{
+     padding: 24px 0 48px;
+}
+.login-box{
+    padding: 0 150px;
+}
+.login-box-img-a {
+    width: auto;
+    height: 24px;
+    padding-right: 58px;
+}
+.login-box-img-b{
+    width: auto;
+    height: 24px;
+    padding-right: 68px;
+}
+
+/*
+.boxline {
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 104px;
+        height: 1px;
+        background-color: #000;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        width: 104px;
+        height: 1px;
+        background-color: #000;
+    }
+}
+*/
+@include pad{
+    .login-box{
+        padding: 0 80px;
+    }
+}
 @include mobile{
     .navbar{
         img{
             width: auto;
             height: 24px;
         }
+    }
+    .modal-style{
+        max-width: 336px;
+    }
+    .modal-body-style{
+        padding: 16px 0 40px;
+    }
+    .login-box{
+        padding: 0 24px;
+    }
+    .login-box-img-a .login-box-img-b{
+        padding-right: 32px;
     }
 }
