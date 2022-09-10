@@ -159,7 +159,7 @@
       right: 0;
       left: 0;
       bottom: 0;
-      background-color: color-1;
+      background-color: #1C1C1C;
       opacity: 0.6;  /*透明度  1-不透明、0.6-半透明、0-完全透明*/
     }
     &:hover{
@@ -274,20 +274,123 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding: 80px 0;
-  .card{
-    width: 416px;
-    height: 178px;
-    padding: 32px;
-    border-radius: 24px 24px 24px 0;
-    z-index: 2;
+  .swiper{
+    width: 925px;
+    height: 429px;  //同學建議，防止箭頭點擊範圍出錯
+    /*img{
+      width: 100%;
+      height: 100%;
+    }*/
     &-img{
       position: absolute;
-      top: -52px;
-      right: 32px;
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      z-index: 3;
+      top: 0;
+      left: 10px;
+      width: 525px;
+      height: 381px;
+      z-index: 1;
+      object-fit: cover;
+      &::after{
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: -10px;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #FFFF;
+        border-radius: 24px;
+        z-index: -1;
+      }
     }
+    .img-radius-24{
+      border-radius: 24px;
+    }
+    .card{
+      width: 416px;
+      height: 178px;
+      padding: 32px;
+      border-radius: 24px 24px 24px 0;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 2;
+      &-img{
+        position: absolute;
+        top: -52px;
+        right: 32px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        z-index: 3;
+      }
+    }
+    swiper-button-next:after {
+      content: "";
+    }
+    .swiper-button-prev:after {
+      content: "";
+    }
+    .swiper-bnt{
+      position: unset; // 繼承父級樣式
+      pointer-events: none;
+      margin-top: 0;
+      width: 24px;
+      height: 24px;
+      color: $secondary;
+      opacity: initial;
+    }
+    .swiper-pagination{
+      bottom: 5px;
+    }
+    .swiper-pagination .swiper-pagination-bullet{
+      background-color: $secondary; // 點點顏色
+      opacity: initial;
+    }
+    .swiper-pagination-bullet{
+      &-active{  // 觸發效果
+        width: 16px;
+        border-radius: 100px;
+      }
+    }
+    .swiper-pagination .swiper-button-next .swiper-button-prev{
+      position: unset;
+      margin-top: 0;
+    }
+    .swiper-icon{
+      position: absolute;
+      bottom: 0;
+      left: 15%;
+      width: 30%;
+      height: auto;
+      z-index: 10;
+    }
+  }
+}
+@include mobile{ //參考助教
+  .swiper{
+    width: auto;
+    height: auto;
+    &-img{ //參考助教
+      position: relative;
+      width: 100%;
+    }
+  }
+  .card{ //參考助教
+    position: relative;
+    width: 100%;
+    padding: 24px;
+    bottom: auto;
+    right: auto;
+    margin-top: 90px;
+    &-img{
+      width: 80px;
+      height: 80px;
+    }
+  }
+  .swiper-icon{ //參考助教
+    position: relative;
+    transform: translateY(50%);
+    margin: auto;
+    margin-top: 32px;
+    left: auto;
   }
 }
