@@ -5,7 +5,7 @@ $(function() {
 // Initialize Swiper
 //program
 
-var swiper = new swiper(".program-swiper", {
+const swiperProgram = new Swiper(".program-swiper", {
   slidesPerView : "auto", //設置slider容器能夠同時顯示的slides數量；"auto"則自動根據slides的寬度來設定數量
   spaceBetween: 16, //設置間隔，單位px
   grabCursor: true, //設置為true時，滑鼠移到Swiper上游標會變成手掌狀，拖動時手掌會成抓緊狀
@@ -14,7 +14,7 @@ var swiper = new swiper(".program-swiper", {
 
 //feedback
 // Swiper
-const Swiper = new swiper(".feedback-swiper", {
+const swiperFeedback = new Swiper(".feedback-swiper", {
   // Optional parameters
   effect: "fade",
   fadeEffect: {

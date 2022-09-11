@@ -266,7 +266,6 @@
 }
 
 /*feedback 回饋*/
-
 .feedback{
   background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week6-202207/bg_share.jpg);
   max-height: 733px;
@@ -277,10 +276,10 @@
   .swiper{
     width: 925px;
     height: 429px;  //同學建議，防止箭頭點擊範圍出錯
-    /*img{
+    img{
       width: 100%;
       height: 100%;
-    }*/
+    }
     &-slide{
       height: auto;
     }

@@ -1,0 +1,44 @@
+.class{
+    padding: 42px 0 80px;
+    .class-nav{
+        .btn-outline-white:hover{
+            color: $secondary;
+            border-color: $secondary;
+            background-color: #1C1C1C;
+        }
+        &-btn{
+            padding: 16px 32px;
+            border-radius: 8px;
+        }
+    }
+    .class-teacher{
+        background-color: #2D2D2D;
+        border-radius: 24px;
+        padding: 48px;
+    }
+    .class-boxL{
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+    .class-boxM{
+        max-width: 576px;
+    }
+    .class-boxR{
+        &-btn{
+            padding: 8px 48px;
+            border-radius: 8px;
+        }
+    }
+}
+@include mobile{
+    .class{
+        padding: 40px 0;
+    }
+    .class-teacher{
+        padding: 32px 24px;
+    }
+}
