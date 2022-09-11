@@ -48,8 +48,8 @@
     <div class="collapse" id="collapse-handle">
       <div class="card card-body bg-color-3 list-group-flush py-1">
         <ul class="list-unstyled d-flex flex-column justify-content-center align-items-center mb-0">
-          <li><a class="d-inline-block text-white fs-7 py-6" href="">首頁</a></li>
-          <li><a class="d-inline-block text-white fs-7 py-6" href="">課程介紹</a></li>
+          <li><a class="d-inline-block text-white fs-7 py-6" href="index.html">首頁</a></li>
+          <li><a class="d-inline-block text-white fs-7 py-6" href="class.html">課程介紹</a></li>
           <li><a class="d-inline-block text-white fs-7 py-6" href="">
             <span class="material-symbols-outlined pr-6 align-middle">
             account_circle
@@ -123,39 +123,7 @@
     </footer>
 
 
-    <!-- Initialize Swiper -->
-    <!--program-->
-    <script>
-      var swiper = new Swiper(".program-swiper", {
-        slidesPerView : "auto", //設置slider容器能夠同時顯示的slides數量；"auto"則自動根據slides的寬度來設定數量
-        spaceBetween: 16, //設置間隔，單位px
-        grabCursor: true, //設置為true時，滑鼠移到Swiper上游標會變成手掌狀，拖動時手掌會成抓緊狀
-        breakpointsBase: "container", //設置斷點功能
-      });
-    </script>
-    <!--feedback-->
-    <script>
-      // Swiper
-      const swiper = new Swiper(".feedback-swiper", {
-        // Optional parameters
-        effect: "fade",
-        fadeEffect: {
-          crossFade: true
-        },
     
-        // If we need pagination
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-  
-        // Navigation arrows
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
