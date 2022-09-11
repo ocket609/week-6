@@ -5,7 +5,7 @@ $(function () {
 }); // Initialize Swiper
 //program
 
-var swiper = new swiper(".program-swiper", {
+var swiperProgram = new Swiper(".program-swiper", {
   slidesPerView: "auto",
   //設置slider容器能夠同時顯示的slides數量；"auto"則自動根據slides的寬度來設定數量
   spaceBetween: 16,
@@ -17,7 +17,7 @@ var swiper = new swiper(".program-swiper", {
 }); //feedback
 // Swiper
 
-var Swiper = new swiper(".feedback-swiper", {
+var swiperFeedback = new Swiper(".feedback-swiper", {
   // Optional parameters
   effect: "fade",
   fadeEffect: {
