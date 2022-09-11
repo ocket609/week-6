@@ -18339,11 +18339,10 @@ color- P71&82
 .feedback .swiper {
   width: 925px;
   height: 429px;
-}
-
-.feedback .swiper img {
-  width: 100%;
-  height: 100%;
+  /*img{
+      width: auto;
+      height: auto;
+    }*/
 }
 
 .feedback .swiper-slide {
@@ -18366,8 +18365,8 @@ color- P71&82
   position: absolute;
   top: 10px;
   left: -10px;
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
   border: 1px solid #FFFF;
   border-radius: 24px;
   z-index: -1;
@@ -18398,7 +18397,7 @@ color- P71&82
   z-index: 3;
 }
 
-.feedback .swiper swiper-button-next:after {
+.feedback .swiper .swiper-button-next:after {
   content: "";
 }
 
@@ -18409,7 +18408,7 @@ color- P71&82
 .feedback .swiper .swiper-bnt {
   position: unset;
   pointer-events: none;
-  margin-top: 0;
+  margin-top: -10px;
   width: 24px;
   height: 24px;
   color: #62DB54;
@@ -18417,7 +18416,7 @@ color- P71&82
 }
 
 .feedback .swiper .swiper-pagination {
-  bottom: 5px;
+  bottom: 0;
 }
 
 .feedback .swiper .swiper-pagination .swiper-pagination-bullet {
@@ -18437,23 +18436,28 @@ color- P71&82
 
 .feedback .swiper .swiper-icon {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 15%;
-  width: 30%;
-  height: auto;
+  width: 25%;
+  height: 24px;
   z-index: 10;
 }
 
-@media (max-width: 375px) {
-  .swiper {
+@media (max-width: 768px) {
+  .feedback .swiper {
     width: auto;
     height: auto;
   }
-  .swiper-img {
+  .feedback .swiper-img {
     position: relative;
+    /*width: auto;*/
     width: 100%;
   }
-  .card {
+  .feedback .swiper-img::after {
+    top: 5px;
+    left: -5px;
+  }
+  .feedback .swiper .card {
     position: relative;
     width: 100%;
     padding: 24px;
@@ -18461,17 +18465,15 @@ color- P71&82
     right: auto;
     margin-top: 90px;
   }
-  .card-img {
+  .feedback .swiper .card-img {
     width: 80px;
     height: 80px;
   }
-  .swiper-icon {
+  .feedback .swiper .swiper-icon {
     position: relative;
-    -webkit-transform: translateY(50%);
-        -ms-transform: translateY(50%);
-            transform: translateY(50%);
+    width: 30%;
     margin: auto;
-    margin-top: 32px;
+    margin-top: 32px !important;
     left: auto;
   }
 }
