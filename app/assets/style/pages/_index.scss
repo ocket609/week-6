@@ -276,10 +276,10 @@
   .swiper{
     width: 925px;
     height: 429px;  //同學建議，防止箭頭點擊範圍出錯
-    img{
-      width: 100%;
-      height: 100%;
-    }
+    /*img{
+      width: auto;
+      height: auto;
+    }*/
     &-slide{
       height: auto;
     }
@@ -296,8 +296,8 @@
         position: absolute;
         top: 10px;
         left: -10px;
-        width: 100%;
-        height: 100%;
+        width: 100% !important;
+        height: 100% !important;
         border: 1px solid #FFFF;
         border-radius: 24px;
         z-index: -1;
@@ -325,7 +325,7 @@
         z-index: 3;
       }
     }
-    swiper-button-next:after {
+    .swiper-button-next:after {
       content: "";
     }
     .swiper-button-prev:after {
@@ -334,14 +334,14 @@
     .swiper-bnt{
       position: unset; // 繼承父級樣式
       pointer-events: none;
-      margin-top: 0;
+      margin-top: -10px;
       width: 24px;
       height: 24px;
       color: $secondary;
       opacity: initial;
     }
     .swiper-pagination{
-      bottom: 5px;
+      bottom: 0;
     }
     .swiper-pagination .swiper-pagination-bullet{
       background-color: $secondary; // 點點顏色
@@ -359,41 +359,59 @@
     }
     .swiper-icon{
       position: absolute;
-      bottom: 0;
+      bottom: 0px;
       left: 15%;
-      width: 30%;
-      height: auto;
+      width: 25%;
+      height: 24px;
       z-index: 10;
     }
   }
 }
-@include mobile{ //參考助教
-  .swiper{
-    width: auto;
-    height: auto;
-    &-img{ //參考助教
-      position: relative;
-      width: 100%;
+@include pad{ //參考助教
+  .feedback{
+    .swiper{
+      width: auto;
+      height: auto;
+      &-img{ //參考助教
+        position: relative;
+        /*width: auto;*/
+        width: 100%;
+        &::after{
+          top: 5px;
+          left: -5px;
+        }
+      }
+      .card{ //參考助教
+        position: relative;
+        width: 100%;
+        padding: 24px;
+        bottom: auto;
+        right: auto;
+        margin-top: 90px;
+        &-img{
+          width: 80px;
+          height: 80px;
+        }
+      }
+      .swiper-icon{ //參考助教
+        position: relative;
+        width: 30%;
+        margin: auto;
+        margin-top: 32px !important;
+        left: auto;
+      }
     }
   }
-  .card{ //參考助教
-    position: relative;
-    width: 100%;
-    padding: 24px;
-    bottom: auto;
-    right: auto;
-    margin-top: 90px;
-    &-img{
-      width: 80px;
-      height: 80px;
+}
+@include mobile{
+  .feedback{
+    .swiper{
+      &-img{ 
+        &::after{
+        }
+      }
+      .swiper-icon{}
     }
-  }
-  .swiper-icon{ //參考助教
-    position: relative;
-    transform: translateY(50%);
-    margin: auto;
-    margin-top: 32px;
-    left: auto;
   }
 }
 
