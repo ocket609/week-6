@@ -1,5 +1,8 @@
 .class{
     padding: 42px 0 80px;
+    .swiper-slide{
+        width: auto;
+    }
     .class-nav{
         .btn-outline-white:hover{
             color: $secondary;
@@ -9,6 +12,11 @@
         &-btn{
             padding: 16px 32px;
             border-radius: 8px;
+            &:hover{
+                color: $secondary;
+                border-color: $secondary;
+                background-color: #1C1C1C;
+            }
         }
     }
     .class-teacher{
